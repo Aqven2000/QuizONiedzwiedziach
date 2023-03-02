@@ -1,2 +1,2 @@
 # QuizONiedzwiedziach
-Strona poświęcona sprawdzaniu wiedzy osoby o niedźwiedziach
+Strona poświęcona sprawdzaniu wiedzy osoby o niedźwiedziach(Frontend)

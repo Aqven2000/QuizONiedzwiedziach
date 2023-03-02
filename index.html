@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz o Niedźwiedziach</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+
+        <script>
+            let highlightedButtons = {}; 
+
+                function highlightButton(button) {
+                    let divId = button.parentNode.id;  
+                    let highlightedButton = highlightedButtons[divId];
+
+                    if (button === highlightedButton) {
+                        button.classList.remove("highlight");
+                        highlightedButtons[divId] = null;
+                    } 
+                    else {
+                        if (highlightedButton !== null && highlightedButton !== undefined) {
+                        highlightedButton.classList.remove("highlight");
+                        }
+                        button.classList.add("highlight");
+                        highlightedButtons[divId] = button;
+                    }
+                }
+        </script>
+
+    </head>
+    <body>
+        <h1>Co wiesz o Niedźwiedziach</h1>
+
+        <div class="multiple-pick" id="a">
+            <br>
+            <h3>W Polsce na wolności można spotkać gatunek:</h3>
+            <button class="odp" onclick="highlightButton(this)">niedźwiedzia czarnego</button>
+            <button class="odp" onclick="highlightButton(this)">niedźwiedzia brunatnego</button>
+            <button class="odp" onclick="highlightButton(this)">niedźwiedzia jaskiniowego</button>
+
+        </div>
+        <br>
+        <div class="multiple-pick" id="b">
+            <br>
+            <h3>Niedźwiedzie polarne zamieszkują:</h3>
+            <button class="odp" onclick="highlightButton(this)">Antarktydę</button>
+            <button class="odp" onclick="highlightButton(this)">Arktykę</button>
+            <button class="odp" onclick="highlightButton(this)">Nową Zelandię</button>
+
+        </div>
+
+        <br>
+        <div class="multiple-pick" id="c">
+            <br>
+            <h3>Dzień Pluszowego Misia obchodzi się:</h3>
+            <button class="odp" onclick="highlightButton(this)">25 stycznia</button>
+            <button class="odp" onclick="highlightButton(this)">25 lipca</button>
+            <button class="odp" onclick="highlightButton(this)">25 listopada</button>
+
+        </div>
+
+        <br>
+        <div class="open-question">
+            <br>
+            <h3>Głos do kultowego "Misia Uszatka" podkładał:</h3>
+            <input type="text">
+
+        </div>
+
+        <br>
+        <div class="open-question">
+            <br>
+            <h3>Frazeologizm "niedźwiedzia przysługa" oznacza:</h3>
+            <input type="text">
+
+        </div>
+
+        <br>
+        <div class="true-false">
+            <br>
+            <h3>Czy wiedziałeś że w Polskiej armi słórzył niedźwiedź Wojtek?</h3>
+            <button class="odp" onclick="highlightButton(this)">Tak</button>
+            <button class="odp" onclick="highlightButton(this)">Nie</button>
+
+        </div>
+
+        <button id="wyslij" type="submit" onclick="location.reload()">wyslij</button>
+
+
+
+        
+    
+    </body>
+</html>

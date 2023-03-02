@@ -1,0 +1,69 @@
+body{
+  background-color: gray;
+}
+
+h1{
+  text-align: center;
+}
+
+.multiple-pick{
+  text-align: center;
+}
+
+.true-false{
+  text-align: center;
+}
+
+.open-question{
+  text-align: center;
+}
+
+
+
+button{
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: gray;
+}
+
+
+button.highlight {
+  background-color: lightgray;
+  color: black;
+}
+
+button#wyslij {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(79, 79, 80);
+  color: white;
+}
+
+button#wyslij:hover {
+  background-color: #555;
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: lightgrey;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #444867;
+  box-shadow: 1px 1px 5px rgba(30, 144, 255, 0.5);
+}
